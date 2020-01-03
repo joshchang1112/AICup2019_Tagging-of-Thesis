@@ -1,1 +1,1 @@
-# AICup2019_Tagging-of-Thesis
+# AICup2019
