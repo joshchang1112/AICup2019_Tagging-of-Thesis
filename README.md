@@ -47,5 +47,21 @@ where `--epoch` specifies the save model of which epoch to use.
 
 ## Experiments
 
+System       | Seq Length | Max Batch Size
+------------ | ---------- | --------------
+`BERT-Base`  | 64         | 64
+...          | 128        | 32
+...          | 256        | 16
+...          | 320        | 14
+...          | 384        | 12
+...          | 512        | 6
+`BERT-Large` | 64         | 12
+...          | 128        | 6
+...          | 256        | 2
+...          | 320        | 1
+...          | 384        | 0
+...          | 512        | 0
+
+
 
 ## Contact information
