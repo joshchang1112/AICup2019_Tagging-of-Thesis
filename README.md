@@ -8,7 +8,7 @@ The contestants will be provided theses with the topic of Computer Science sourc
 
 ## Installation
 
-To execute our code successfully, you need to install Python3.7 and PyTorch (our deep learning framework) first. Please refer to [Python3.7 installing page](https://www.python.org/downloads/) and [Pytorch installing page](https://pytorch.org/get-started/locally/#start-locally) regarding the specific install command for your platform.
+To execute our code successfully, you need to install Python3.7 and PyTorch (our deep learning framework) first. Please refer to [Python installing page](https://www.python.org/downloads/) and [Pytorch installing page](https://pytorch.org/get-started/locally/#start-locally) regarding the specific install command for your platform.
 
 When PyTorch has been installed, Transformers can be installed using pip as follows:
 ```
@@ -20,4 +20,23 @@ Other packages can be also installed using pip as follows:
 pip install -r requirements.txt
 ```
 
-## 
+## How to execute
+
+1. 
+
+2. Preprocess the data
+```
+cd src/
+python make_dataset.py ../data/
+```
+
+3. Training:
+```
+python train.py ../models/
+```
+
+4. Predicting
+```
+python predict.py ../models/ --epoch 3
+```
+where `--epoch` specifies the save model of which epoch to use.
