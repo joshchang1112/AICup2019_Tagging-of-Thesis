@@ -71,13 +71,14 @@ Model |  Max Seq Length | Batch Size  | Learning Rate  |  Validation F1 | Public
 
 
 ## Score
-Team Name: 公鹿總冠軍 (Milwaukee Bucks Champion :trophy:)
+Team Name: 公鹿總冠軍 (Milwaukee Bucks Champion:trophy:)
 
 Public Score:
 
-0.725234 (Rank:4/420)
+0.746900 (Rank:1/469)
+
 Private Score:
 
-0.747832 (Rank:2/420)
+0.743458 (Rank:1/469)
 
 ## Contact information
