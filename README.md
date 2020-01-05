@@ -24,18 +24,18 @@ pip install -r requirements.txt
 
 1. 
 
-2. Preprocess the data
+2.  Preprocess the data
 ```
 cd src/
 python make_dataset.py ../data/
 ```
 
-3. Training:
+3.  Training:
 ```
 python train.py ../models/
 ```
 
-4. Predicting
+4.  Predicting
 ```
 python predict.py ../models/ --epoch 3
 ```
