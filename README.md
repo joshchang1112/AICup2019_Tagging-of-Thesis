@@ -54,6 +54,7 @@ where `--epoch` specifies the save model of which epoch to use.
 ### Output Embedding
 
 ***** Constant Settings *****
+
 Optimizer: Adam
 Scheduler: CosineAnnealing
 
