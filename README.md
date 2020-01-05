@@ -59,7 +59,7 @@ Scheduler: CosineAnnealing
 
 Model        | Seq Length | Batch Size    | Learning Rate  | Token / Mean pooling | Replace Contraction
 ------------ | ---------- | ----------    | -------------  | -------------------- | -------------------
-`BERT-Base`  | 64         | 64            |                |                      |
+`Roberta-Base`  | 400        | 16            |                             
 
 
 
