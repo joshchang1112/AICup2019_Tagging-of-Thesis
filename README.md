@@ -59,7 +59,7 @@ Scheduler: CosineAnnealing
 
 Model | Seq Length | Batch Size  | Learning Rate  | Output Embedding | Advanced text preprocess | Validation F1 | Public Test F1 |
 ----- | ---------- | ----------  | -------------  | ---------------- | ------------------- | ------------- | -------------- |
-`Roberta-Base`|     400       | 16 | 2e-5 |                         
+`Roberta-Base`|:400:       | 16 | 2e-5 |                         
 
 
 
