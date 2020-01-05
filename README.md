@@ -20,7 +20,7 @@ Other packages can be also installed using pip as follows:
 pip install -r requirements.txt
 ```
 
-## How to execute
+## How to execute our code?
 
 1. Split task1_trainset.csv(raw train data) to trainset.csv and validset.csv data
 ```
