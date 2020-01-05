@@ -22,7 +22,7 @@ pip install -r requirements.txt
 
 ## How to execute our code?
 
-1. Split task1_trainset.csv(raw train data) to trainset.csv and validset.csv data
+1. Split task1_trainset.csv (raw train data) to trainset.csv and validset.csv data
 ```
 cd data/
 python split_train.py
@@ -44,3 +44,8 @@ python train.py ../models/
 python predict.py ../models/ --epoch 3
 ```
 where `--epoch` specifies the save model of which epoch to use.
+
+## Experiments
+
+
+## Contact information
