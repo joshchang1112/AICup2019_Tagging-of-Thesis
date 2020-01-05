@@ -8,9 +8,15 @@ The contestants will be provided theses with the topic of Computer Science sourc
 
 ## Installation
 
-First you need to install PyTorch (Please refer to * [Pytorch installing page](https://pytorch.org/get-started/locally/#start-locally))
+First you need to install PyTorch (Please refer to [Pytorch installing page](https://pytorch.org/get-started/locally/#start-locally))
+When PyTorch has been installed, Transformers can be installed using pip as follows:
+
 ```
-pip install -U scikit-learn
 pip install transformers
 ```
 
+Other packages can be installed using pip as follows:
+
+```
+pip install -r requirements.txt
+```
