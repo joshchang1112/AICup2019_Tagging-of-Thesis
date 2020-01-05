@@ -81,7 +81,7 @@ Private Score:
 
 ## How to reproduce our results?
 
-Detailed settings about our model is in the log file (`results/log.txt`). You can follow the settings to train the model yourself and get our experiment results above. To reach our highest score on the leaderboard, you need to ensemble our predictions by executing the simple weighted voting code as follows:
+Detailed settings about our model are described in the log file (`results/log.txt`). You can follow the settings to train the model yourself and get our experiment results above. To reach our highest score on the leaderboard, you need to ensemble our predictions by executing the simple weighted voting code as follows:
 
 ```
 cd src/
