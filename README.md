@@ -15,7 +15,9 @@ When PyTorch has been installed, Transformers can be installed using pip as foll
 pip install transformers
 ```
 
-Other packages can be installed using pip as follows:
+Other packages can be also installed using pip as follows:
 ```
 pip install -r requirements.txt
 ```
+
+##
