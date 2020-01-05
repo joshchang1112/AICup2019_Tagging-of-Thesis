@@ -22,20 +22,20 @@ pip install -r requirements.txt
 
 ## How to execute
 
-1. 
+- a
 
-2.  Preprocess the data
+- Preprocess the data
 ```
 cd src/
 python make_dataset.py ../data/
 ```
 
-3.  Training:
+- Training:
 ```
 python train.py ../models/
 ```
 
-4.  Predicting
+- Predicting
 ```
 python predict.py ../models/ --epoch 3
 ```
