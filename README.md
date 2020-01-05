@@ -49,14 +49,14 @@ where `--epoch` specifies the save model of which epoch to use.
 
 
 ## Experiments
-```
+
+
+### Output Embedding
+
 ***** Constant Settings *****
 Optimizer: Adam
 Scheduler: CosineAnnealing
 
-```
-
-### Output Embedding
 
 Model |  Max Seq Length | Output Embedding  |  Validation F1 | Public Test F1 |
 ----- |:--------------: |:----------: | :-------------:| :-------------:|
