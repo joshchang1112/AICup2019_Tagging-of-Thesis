@@ -45,8 +45,6 @@ python predict.py ../models/ --epoch 3
 ```
 where `--epoch` specifies the save model of which epoch to use.
 
-## Framework
-
 
 ## Experiments
 
