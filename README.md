@@ -56,11 +56,20 @@ Scheduler: CosineAnnealing
 
 ```
 
+### Output Embedding
 
 Model |  Max Seq Length | Batch Size  | Learning Rate  |  Validation F1 | Public Test F1 |
 ----- |:--------------: |:----------: | :-------------:|:--------------:|:--------------:|
-`Roberta-Base`|      | 16 | 2e-5 |                         
+`Roberta-Base`|   400  | 16 | 2e-5 |  0.7331 | 0.7345   | 
+`Roberta-Base`|   400  | 4 | 6e-6 |  0.7331 | 0.7345   | 
+
+### Different Pretrained Model
+
+### Different Learning Rate
+
+### Advanced Text Preprocess
 
 
+## Score
 
 ## Contact information
