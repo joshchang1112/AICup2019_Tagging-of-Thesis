@@ -57,9 +57,9 @@ Scheduler: CosineAnnealing
 ```
 
 
-Model | Seq Length | Batch Size  | Learning Rate  | Output Embedding | Advanced text preprocess | Validation F1 | Public Test F1 |
------ | ---------- | ----------  | -------------  | ---------------- | ------------------- | ------------- | -------------- |
-: `Roberta-Base`|      | 16 | 2e-5 |                         
+Model |  Seq Length | Batch Size  | Learning Rate  | Output Embedding | Advanced text preprocess | Validation F1 | Public Test F1 |
+----- | :----------: | ----------  | -------------  | ---------------- | ------------------- | ------------- | -------------- |
+`Roberta-Base`|      | 16 | 2e-5 |                         
 
 
 
