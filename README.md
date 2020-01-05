@@ -53,11 +53,6 @@ where `--epoch` specifies the save model of which epoch to use.
 
 ### Output Embedding
 
-***** Constant Settings *****
-
-Optimizer: Adam
-Scheduler: CosineAnnealing
-
 
 Model |  Max Seq Length | Output Embedding  |  Validation F1 | Public Test F1 |
 ----- |:--------------: |:----------: | :-------------:| :-------------:|
@@ -66,7 +61,9 @@ Model |  Max Seq Length | Output Embedding  |  Validation F1 | Public Test F1 |
 
 ### Different Pretrained Model
 
+
 ### Different Learning Rate
+
 
 ### Advanced Text Preprocess
 
@@ -82,6 +79,15 @@ Private Score:
 
 0.743458 (Rank:1/469)
 
+## How to reproduce our results?
+
+Detailed settings about our model is in the log file (`results/log.txt`). You can follow the settings to train the model yourself and get our experiment results above. To reach our highest score on the leaderboard, you need to ensemble our predictions by executing the simple weighted voting code as follows:
+
+```
+cd src/
+python ensemble.py ../results
+```
+
 ## Contact information
 
-For help or issues using our code, please contact Sung-Ping Chang(`joshspchang@gmail.com`).
+For help or issues using our code, please contact Sung-Ping Chang (`joshspchang@gmail.com`).
