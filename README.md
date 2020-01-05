@@ -59,7 +59,7 @@ Scheduler: CosineAnnealing
 ### Output Embedding
 
 Model |  Max Seq Length | Output Embedding  |  Validation F1 | Public Test F1 |
------ |:--------------: |:----------: | :-------------:|
+----- |:--------------: |:----------: | :-------------:| :-------------:|
 `Roberta-Base`|   400  |[SEP] token |  0.7331 | 0.7345   | 
 `Roberta-Base`|   400  | Mean Pooling |  0.7331 | 0.7345   | 
 
