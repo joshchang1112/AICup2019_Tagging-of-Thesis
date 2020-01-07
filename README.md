@@ -72,9 +72,9 @@ Model |  Max Seq Length | Output Embedding  |  Validation F1 | Public Test F1 |
 
 Model |  Max Seq Length | Output Embedding  |  Validation F1 | Public Test F1 |
 ----- |:--------------: |:----------: | :-------------:| :-------------:|
-`Roberta-Base`|   500  | Mean Pooling |  0.7331 | 0.7345   | 
-`Roberta-Large`|   500  | Mean Pooling |  0.7359 | 0.7355   | 
-`XLNet-Large-cased`|   500  | Mean Pooling |  0.7359 | 0.7355   | 
+`Roberta-Base`|   500  | Mean Pooling |  0.7462 | 0.7344   | 
+`Roberta-Large`|   500  | Mean Pooling |  0.7468 | 0.7412   | 
+`XLNet-Large-cased`|   500  | Mean Pooling |  0.7470 | 0.7413   | 
 
 
 ### Different Learning Rate
