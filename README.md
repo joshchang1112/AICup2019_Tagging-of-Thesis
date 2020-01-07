@@ -70,6 +70,12 @@ Model |  Max Seq Length | Output Embedding  |  Validation F1 | Public Test F1 |
 
 ### Different Pretrained Model
 
+Model |  Max Seq Length | Output Embedding  |  Validation F1 | Public Test F1 |
+----- |:--------------: |:----------: | :-------------:| :-------------:|
+`Roberta-Base`|   400  | Mean Pooling |  0.7331 | 0.7345   | 
+`Roberta-Large`|   400  | Mean Pooling |  0.7359 | 0.7355   | 
+`XLNet-Large-cased`|   400  | Mean Pooling |  0.7359 | 0.7355   | 
+
 
 ### Different Learning Rate
 
@@ -80,7 +86,7 @@ Model |  Max Seq Length | Output Embedding  |  Validation F1 | Public Test F1 |
 
 ## How to reproduce our results?
 
-Detailed settings about our model are recorded in the log file (`results/log.txt`). You can follow the settings to train the model yourself and get our experiment results above. To reach our highest score on the leaderboard, you need to ensemble our predictions by executing the simple weighted voting code as follows:
+Detailed settings about our model are recorded in the log file (`results/log.txt`). The categorical F1 score of each settings are also recorded in the file (it may help improve our ensemble strategy) . You can follow the settings to train the model yourself and get our experiment results above. To reach our highest score on the leaderboard, you need to ensemble our predictions by executing the simple weighted voting code as follows:
 
 ```
 cd src/
