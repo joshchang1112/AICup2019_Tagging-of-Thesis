@@ -6,6 +6,17 @@ The aim of this competition is to attempt to solve a problem that has troubled r
 
 The contestants will be provided theses with the topic of Computer Science sourced from arXiv. The contestants should use the provided materials to predict if a sentence in a thesis should be classified as the following categories: Background, Objectives, Methods, Results, Conclusions, or Others. Note that a sentence may have multiple classifications, e.g. a sentence may be classified as both Objective and Methods.
 
+## Score Leaderboard
+Team Name: 公鹿總冠軍 (Milwaukee Bucks Champion:trophy:)
+
+Public Score:
+
+0.746900 (Rank:1/469)
+
+Private Score:
+
+0.743458 (Rank:1/469)
+
 ## Installation
 
 To execute our code successfully, you need to install Python3.7 and PyTorch (our deep learning framework) first. Please refer to [Python installing page](https://www.python.org/downloads/) and [Pytorch installing page](https://pytorch.org/get-started/locally/#start-locally) regarding the specific install command for your platform.
@@ -66,16 +77,6 @@ Model |  Max Seq Length | Output Embedding  |  Validation F1 | Public Test F1 |
 ### Advanced Text Preprocess
 
 
-## Score Leaderboard
-Team Name: 公鹿總冠軍 (Milwaukee Bucks Champion:trophy:)
-
-Public Score:
-
-0.746900 (Rank:1/469)
-
-Private Score:
-
-0.743458 (Rank:1/469)
 
 ## How to reproduce our results?
 
