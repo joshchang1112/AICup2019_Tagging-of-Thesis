@@ -65,16 +65,16 @@ where `--epoch` specifies the save model of which epoch to use.
 
 Model |  Max Seq Length | Output Embedding  |  Validation F1 | Public Test F1 |
 ----- |:--------------: |:----------: | :-------------:| :-------------:|
-`Roberta-Base`|   400  |[SEP] token |  0.7331 | 0.7345   | 
-`Roberta-Base`|   400  | Mean Pooling |  0.7359 | 0.7355   | 
+`Roberta-Base`|   500  |[SEP] token |  0.7331 | 0.7345   | 
+`Roberta-Base`|   500  | Mean Pooling |  0.7359 | 0.7355   | 
 
 ### Different Pretrained Model
 
 Model |  Max Seq Length | Output Embedding  |  Validation F1 | Public Test F1 |
 ----- |:--------------: |:----------: | :-------------:| :-------------:|
-`Roberta-Base`|   400  | Mean Pooling |  0.7331 | 0.7345   | 
-`Roberta-Large`|   400  | Mean Pooling |  0.7359 | 0.7355   | 
-`XLNet-Large-cased`|   400  | Mean Pooling |  0.7359 | 0.7355   | 
+`Roberta-Base`|   500  | Mean Pooling |  0.7331 | 0.7345   | 
+`Roberta-Large`|   500  | Mean Pooling |  0.7359 | 0.7355   | 
+`XLNet-Large-cased`|   500  | Mean Pooling |  0.7359 | 0.7355   | 
 
 
 ### Different Learning Rate
