@@ -82,11 +82,14 @@ Model |  Max Seq Length | Output Embedding  |  Validation F1 | Public Test F1 |
 
 ### Advanced Text Preprocess
 
+### Ensemble
+
+The categorical F1 score of each settings are recorded in the log file (`results/log.txt`). This information may help improve our ensemble strategy.
 
 
 ## How to reproduce our results?
 
-Detailed settings about our model are recorded in the log file (`results/log.txt`). The categorical F1 score of each settings are also recorded in the file (it may help improve our ensemble strategy) . You can follow the settings to train the model yourself and get our experiment results above. To reach our highest score on the leaderboard, you need to ensemble our predictions by executing the simple weighted voting code as follows:
+Detailed settings about our model are recorded in the log file (`results/log.txt`). You can follow the settings to train the model yourself and get our experiment results above. To reach our highest score on the leaderboard, you need to ensemble our predictions by executing the simple weighted voting code as follows:
 
 ```
 cd src/
