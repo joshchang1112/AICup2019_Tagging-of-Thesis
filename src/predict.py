@@ -85,7 +85,7 @@ def write_predict_csv(predicts, data, output_path, n=10):
     sample.iloc[131166:262948, 5] = answer[:, 4]
     sample.iloc[131166:262948, 6] = answer[:, 5]
     logging.info('Writing output to {}'.format(output_path))
-    sample.to_csv('prediction.csv')
+    sample.to_csv('../results/prediction.csv')
 
 def _parse_args():
     parser = argparse.ArgumentParser(
