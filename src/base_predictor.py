@@ -12,7 +12,7 @@ class BasePredictor():
                  valid=None,
                  device=None,
                  metrics={},
-                 learning_rate=6e-6,
+                 learning_rate=2e-5,
                  max_iters_in_epoch=1e20,
                  grad_accumulate_steps=1):
         self.batch_size = batch_size
