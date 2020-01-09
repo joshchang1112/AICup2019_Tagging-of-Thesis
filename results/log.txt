@@ -1,0 +1,225 @@
+AICup2019 Task1 Experiment
+
+--------------------------------------------------------------------
+
+Roberta-base
+
+7.csv
+Setting:
+Batch size: 16
+Initial learning rate: 2e-5
+Maximum seqence length: 500
+Model: Roberta-base
+Mean pooing for each labling sentence
+11 + 12 layer
+
+F1_Score: : 0.7452783412215461 
+Category F1:
+0.8650317892824704
+0.653781512605042
+0.7583811012680215
+0.7595186427303215
+0.56187624750499
+0.34285714285714286
+loss=0.240692
+Public Test F1_Score: 0.7378134148
+
+new_7.csv
+Setting:
+Batch size: 16
+Initial learning rate: 2e-5
+Maximum seqence length: 500
+Model: Roberta-base
+Mean pooing for each labling sentence
+Last layer
+
+F1_Score: : 0.7462203023758099 
+Category F1:
+0.8663375388553666
+0.6539860139860141
+0.7583707283396617
+0.7623389494549058
+0.566715186802523
+0.35714285714285715
+loss=0.239816
+Public Test F1_Score: 0.7344783715
+
+--------------------------------------------------------------------
+
+Roberta-large
+
+8.csv
+Setting:
+Batch size: 6
+Initial learning rate: 8e-6
+Maximum seqence length: 500
+Model: Roberta-large
+Mean pooing for each labling sentence
+Last layer
+
+F1_Score: : 0.7464530277939398 
+Category F1:
+0.8638045891931904
+0.6577364680153089
+0.7631396957123099
+0.7621664050235478
+0.5712941176470588
+0.33333333333333337
+loss=0.240194
+Public Test F1_Score: 0.7388390034
+
+8-2.csv
+Setting:
+Batch size: 6
+Initial learning rate: 8e-6
+Maximum seqence length: 500
+Model: Roberta-large
+Mean pooing for each labling sentence
+Average of 21~24 layers
+
+F1_Score: : 0.7457110862262039 
+Category F1:
+0.8628972653362896
+0.6537931034482759
+0.7631854697869367
+0.7644514353126229
+0.5716878402903812
+0.33088235294117646
+loss=0.239230
+Public Test F1_Score: 0.7368421053
+
+
+8-3.csv
+Setting:
+Batch size: 4
+Initial learning rate: 6e-6
+Maximum seqence length: 500
+Model: Roberta-large
+Mean pooing for each labling sentence
+Scheduler: 4000
+Last layer
+
+F1_Score: : 0.7467594056275687 
+Category F1:
+0.8654411764705884
+0.664320519761776
+0.7574047954866008
+0.7628577146287773
+0.5676982591876208
+0.33333333333333337
+loss=0.237526
+Public Test F1_Score: 0.741185488
+
+8-4.csv
+Setting:
+Batch size: 4
+Initial learning rate: 6e-6
+Maximum seqence length: 500
+Model: Roberta-large
+Mean pooing for each labling sentence
+Last layer
+Scheduler: 4000
+Replace Contraction
+
+F1_Score: : 0.7474310438074635 
+Category F1:
+0.8637447276728406
+0.6620358001602993
+0.7634825519915404
+0.762532454563611
+0.56513222331048
+0.3420074349442379
+loss=0.237892
+Public Test F1_Score: 0.7416587226
+
+
+8-5.csv
+Setting:
+Batch size: 4
+Initial learning rate: 6e-6
+Maximum seqence length: 500
+Model: Roberta-large
+Mean pooing for each labling sentence
+Last layer
+Scheduler: 4000
+Replace Contraction
+Remove(i)(ii)(iii)(iv)(v)
+epoch 1
+
+F1_Score: : 0.7455083011143963 
+Category F1:
+0.8665810240411085
+0.6580783682232958
+0.7533516988062443
+0.7667191188040912
+0.5611083621969323
+0.31538461538461543
+loss=0.235281
+Public Test F1_Score: 0.7397225077
+
+
+8-6.csv
+Setting:
+Batch size: 4
+Initial learning rate: 6e-6
+Maximum seqence length: 500
+Model: Roberta-large
+Mean pooing for each labling sentence
+Last layer
+Scheduler: 4000
+Replace Contraction
+Replace(i)(ii)(iii)(iv)(v) to first, second, third, fourth, fifth
+epoch 2
+
+F1_Score: : 0.748371
+Public Test F1_Score: 0.7397416413
+
+--------------------------------------------------------------------
+
+XLNet-large-cased
+
+9.csv
+Setting:
+Batch size: 4
+Initial learning rate: 6e-6
+Maximum seqence length: 600
+Model: XLNet-large-cased
+Mean pooing for each labling sentence
+Last layer
+
+Evaluation Score:
+F1_Score:  0.7470813612801444 
+Category F1:
+0.8659492978296552
+0.6566164154103853
+0.7621982537236776
+0.7636000000000001
+0.5551142005958292
+0.32452830188679244
+loss=0.239148
+Public Test F1_Score: 0.7412622899 
+
+
+9-2 .csv
+Setting:
+Batch size: 4
+Initial learning rate: 6e-6
+Maximum seqence length: 600
+Model: XLNet-large-cased
+Mean pooing for each labling sentence
+Last layer
+Replace Contraction
+Scheduler: 4000
+
+F1_Score: : 0.7462497167459777 
+Category F1:
+0.8621818181818183
+0.6583037905644942
+0.7664816099930605
+0.7602030456852792
+0.5433884297520661
+0.3516483516483517
+loss=0.238664
+Public Test F1_Score:  0.7413892261
+
+
