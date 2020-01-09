@@ -96,6 +96,9 @@ cd src/
 python ensemble.py ../results
 ```
 
+## FAQ
+
+
 ## Contact information
 
 For help or issues using our code, please contact Sung-Ping Chang (`joshspchang@gmail.com`).
