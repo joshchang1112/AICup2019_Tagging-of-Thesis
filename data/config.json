@@ -1,0 +1,5 @@
+{    
+    "train_csv_path": "../data/trainset.csv",
+    "valid_csv_path": "../data/validset.csv",
+    "test_csv_path": "../data/task1_private_testset.csv"
+}

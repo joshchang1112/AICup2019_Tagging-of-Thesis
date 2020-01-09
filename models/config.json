@@ -1,0 +1,9 @@
+{   
+    "arch": "BertNet",
+    "train": "../data/train.pkl",
+    "test": "../data/test.pkl",
+    "model_parameters": {
+        "valid": "../data/valid.pkl"
+    }
+}
+
