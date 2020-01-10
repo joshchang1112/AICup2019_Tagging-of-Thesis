@@ -93,8 +93,8 @@ The categorical F1 score of each settings are recorded in the log file (`results
 Detailed settings about our model are recorded in the log file (`results/log.txt`). You can follow the settings to train the model yourself and get our experiment results above. To reach our highest score on the leaderboard, you need to ensemble our predictions by executing the simple weighted voting code as follows:
 
 ```
-cd src/
-python ensemble.py ../results
+cd results/
+python ensemble.py
 ```
 
 ## Contact information
