@@ -63,6 +63,15 @@ Note: You should comment out the 50th line in `src/dataset.py` so that you can s
 
 ### Output Embedding
 
+We tried two method to extract the information of the output embedding from the pretrain model.
+
+#### SEP Token
+We add the sep token between the sentences and extract its position of the output embedding as the representation of the sentence. 
+
+#### Mean Pooling
+Mean pooling is applied over the output embedding of every words in the sentence to extract the information as the representation of the sentence. 
+
+The comparison of the two settings is shown in the table below:
 
 Model |  Max Seq Length | Output Embedding  |  Validation F1 | Public Test F1 |
 ----- |:--------------: |:----------: | :-------------:| :-------------:|
