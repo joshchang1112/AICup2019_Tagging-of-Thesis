@@ -56,7 +56,7 @@ python predict.py ../models/ --epoch 3
 ```
 where `--epoch` specifies the save model of which epoch to use.
 
-Note: You should comment out the 50th line in `src/dataset.py` then you can successfully run the code :)
+Note: You should comment out the 50th line in `src/dataset.py` so that you can successfully run the prediction code :)
 
 ## Experiments
 
