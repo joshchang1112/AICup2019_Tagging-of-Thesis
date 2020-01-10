@@ -33,7 +33,7 @@ pip install -r requirements.txt
 
 ## How to execute our code?
 
-1. Split task1_trainset.csv (raw train data) to trainset.csv and validset.csv data
+1. Split task1_trainset.csv (raw train data) to trainset.csv and validset.csv
 ```
 cd data/
 python split_train.py
@@ -45,17 +45,18 @@ cd src/
 python make_dataset.py ../data/
 ```
 
-3. Training:
+3. Train model
 ```
 python train.py ../models/
 ```
 
-4. Predicting
+4. Predict 
 ```
 python predict.py ../models/ --epoch 3
 ```
 where `--epoch` specifies the save model of which epoch to use.
 
+Note: You should comment out the 50th line in `src/dataset.py` so that you can successfully run the prediction code :)
 
 ## Experiments
 
@@ -92,12 +93,9 @@ The categorical F1 score of each settings are recorded in the log file (`results
 Detailed settings about our model are recorded in the log file (`results/log.txt`). You can follow the settings to train the model yourself and get our experiment results above. To reach our highest score on the leaderboard, you need to ensemble our predictions by executing the simple weighted voting code as follows:
 
 ```
-cd src/
-python ensemble.py ../results
+cd results/
+python ensemble.py
 ```
-
-## FAQ
-
 
 ## Contact information
 
