@@ -13,7 +13,10 @@ class RobertaForMultiLabelSequenceClassification(torch.nn.Module):
     def __init__(self, num_labels=4):
         super(RobertaForMultiLabelSequenceClassification, self).__init__()
         self.num_labels = num_labels
+        # base model
         self.classifier = torch.nn.Linear(768 , 6)
+        # large model
+        #self.classifier = torch.nn.Linear(1024, 6)
         self.bert = RobertaModel.from_pretrained('roberta-base', output_hidden_states=True)
         #self.bert = BertModel.from_pretrained('bert-base-cased')
         #self.bert = XLNetModel.from_pretrained('xlnet-large-cased', output_hidden_states=True)
@@ -37,12 +40,15 @@ class RobertaForMultiLabelSequenceClassification(torch.nn.Module):
     def forward(self, input_ids, context_lens, sentence_token, token_type_ids=None, attention_mask=None, labels=None):
         _, _, last_hidden_state = self.bert(input_ids=input_ids, attention_mask=attention_mask)
         #last_hidden_state = self.pool_hidden_state(last_hidden_state, context_lens)
+        # xlnet-large
         #last_hidden_state = self.bert(input_ids=input_ids, attention_mask=attention_mask)
         #last_hidden_state = last_hidden_state[1]
         #print(last_hidden_state.size())
-        last_hidden_state = last_hidden_state[12] + last_hidden_state[11]
-        #last_hidden_state = (last_hidden_state[24] + last_hidden_state[23] + last_hidden_state[22] + last_hidden_state[21]) / 4
-        #last_hidden_state = torch.cat([last_hidden_state[12], last_hidden_state[11]], dim=2)
+        # roberta-base
+        last_hidden_state = last_hidden_state[12]
+        # roberta-large
+        #last_hidden_state = last_hidden_state[24]
+
         batch_size = input_ids.size()[0]
         logits = []
         for i in range(batch_size):
@@ -56,6 +62,8 @@ class RobertaForMultiLabelSequenceClassification(torch.nn.Module):
                         prob = torch.cat([prob, tmp_prob], dim=0)
 
                 else:
+                    # sep token: just cat the sentence token position of last hidden state
+                    # mean pooling
                     if j == 0:
                         logit_mean = torch.mean(last_hidden_state[i][:sentence_token[i][j]+1].unsqueeze(0), 1)
                         prob = self.sigmoid(self.classifier(logit_mean))
