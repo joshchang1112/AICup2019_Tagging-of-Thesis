@@ -120,7 +120,9 @@ Model |  Max Seq Length | Adv. Text Preprocess  | Validation F1 | Public Test F1
 
 ### Ensemble
 
-We know that if our models are more diverse, we can improve our scores more effectively in ensemble. Thus, the categorical F1 score of each settings are recorded in the log file (`results/log.txt`) so that we can observe their performance on each classification. Although we didn't have enough time to try a lot of methods about ensemble, we believed that this information may help improve our ensemble strategy and score in the future.
+We know that if our models are more diverse, we can improve our scores more effectively in ensemble. Thus, the categorical F1 score of each settings are recorded in the log file (`results/log.txt`) so that we can observe their performance on each classification. 
+
+After several experiments, we increased the best score of the single model from **0.7416** to **0.7469**!!! Although we didn't have enough time to try a lot of methods about ensemble, we believed that this information may help improve our ensemble strategy and score in the future.
 
 ## How to reproduce our results?
 
