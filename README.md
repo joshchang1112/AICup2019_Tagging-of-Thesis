@@ -56,6 +56,7 @@ python predict.py ../models/ --epoch 3
 ```
 where `--epoch` specifies the save model of which epoch to use.
 
+Note: You should comment out the 50th line in `src/dataset.py` then you can successfully run the code :)
 
 ## Experiments
 
@@ -95,9 +96,6 @@ Detailed settings about our model are recorded in the log file (`results/log.txt
 cd src/
 python ensemble.py ../results
 ```
-
-## FAQ
-
 
 ## Contact information
 
