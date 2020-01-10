@@ -80,8 +80,22 @@ Model |  Max Seq Length | Output Embedding  |  Validation F1 | Public Test F1 |
 
 ### Different Learning Rate
 
+Model |  Max Seq Length | Batch size  | Learning Rate |  Validation F1 | Public Test F1 |
+----- |:--------------: |:----------: |:----------: | :-------------:| :-------------:|
+`Roberta-Large`|   500  | 6        |  8e-6       | 0.7465 | 0.7388   | 
+`Roberta-Large`|   500  | 4        |  6e-6       | 0.7468 | 0.7412   | 
 
 ### Advanced Text Preprocess
+
+Model |  Max Seq Length | Adv. Text Preprocess  | Validation F1 | Public Test F1 |
+----- |:--------------: |:---------------------:| :-------------:| :-------------:|
+`Roberta-Large`|   500  | None |  0.7468 | 0.7412   | 
+`Roberta-Large`|   500  | I |  0.7474 | 0.7416   | 
+`Roberta-Large`|   500  | I + II |  0.7455 | 0.7397   | 
+`Roberta-Large`|   500  | I + III |  0.7484 | 0.7397   |
+`XLNet-Large-cased`|   600  | None |  0.7470 | 0.7413  |
+`XLNet-Large-cased`|   600  | I |  0.7462 | 0.7414  |
+
 
 ### Ensemble
 
