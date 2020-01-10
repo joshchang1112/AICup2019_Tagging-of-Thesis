@@ -80,7 +80,7 @@ Model |  Max Seq Length | Output Embedding  |  Validation F1 | Public Test F1 |
 
 ### Different Pretrained Model
 
-We tried several pretrained models and compared their f1 score. After many trials and tuning hyperparameters, we decided to use `Roberta-Base`, `Roberta-Large`, and `XLNet-Large-cased` as our models.
+We tried several pretrained models and compared their F1 score. After many trials and tuning hyperparameters, we decided to use `Roberta-Base`, `Roberta-Large`, and `XLNet-Large-cased` as our models.
 
 Model |  Max Seq Length | Output Embedding  |  Validation F1 | Public Test F1 |
 ----- |:--------------: |:----------: | :-------------:| :-------------:|
@@ -98,16 +98,22 @@ Model |  Max Seq Length | Batch size  | Learning Rate |  Validation F1 | Public 
 
 ### Advanced Text Preprocess
 
-####
+#### I. Replace Contraction
 
-The comparison of the several settings is shown in the table below:
+To let the model better understand the relationship between words, we unify some words with the same meaning but different writing. For example: will not/won't, can not/can't, do not/don't ...etc
+
+#### II & III. Remove(i)(ii)(iii).../ Replace (i)(ii)... to first, second...
+
+In the abstract, we often see authors using (i)(ii)(iii) to illustrate his research. However, these symbols may confuse the model and understand them as multiple I(me). Therefore, we tried two method to solve the problems. The first one is just remove these symbols, and the second one is replace them as first, second...
+
+The combination of these methods help me reach my best Validation F1 score : 0.7484, and the comparison of the several settings is shown in the table below:
 
 Model |  Max Seq Length | Adv. Text Preprocess  | Validation F1 | Public Test F1 |
 ----- |:--------------: |:---------------------:| :-------------:| :-------------:|
 `Roberta-Large`|   500  | None |  0.7468 | 0.7412   | 
 `Roberta-Large`|   500  | I |  0.7474 | 0.7416   | 
 `Roberta-Large`|   500  | I + II |  0.7455 | 0.7397   | 
-`Roberta-Large`|   500  | I + III |  0.7484 | 0.7397   |
+`Roberta-Large`|   500  | I + III |  $0.7484$ | 0.7397   |
 `XLNet-Large-cased`|   600  | None |  0.7470 | 0.7413  |
 `XLNet-Large-cased`|   600  | I |  0.7462 | 0.7414  |
 
