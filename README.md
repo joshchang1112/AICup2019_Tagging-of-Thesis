@@ -80,6 +80,8 @@ Model |  Max Seq Length | Output Embedding  |  Validation F1 | Public Test F1 |
 
 ### Different Pretrained Model
 
+We tried several pretrained models and compared their f1 score. After many trials and tuning hyperparameters, we decided to use `Roberta-Base`, `Roberta-Large`, and `XLNet-Large-cased` as our models.
+
 Model |  Max Seq Length | Output Embedding  |  Validation F1 | Public Test F1 |
 ----- |:--------------: |:----------: | :-------------:| :-------------:|
 `Roberta-Base`|   500  | Mean Pooling |  0.7462 | 0.7344   | 
@@ -95,6 +97,10 @@ Model |  Max Seq Length | Batch size  | Learning Rate |  Validation F1 | Public 
 `Roberta-Large`|   500  | 4        |  6e-6       | 0.7468 | 0.7412   | 
 
 ### Advanced Text Preprocess
+
+####
+
+The comparison of the several settings is shown in the table below:
 
 Model |  Max Seq Length | Adv. Text Preprocess  | Validation F1 | Public Test F1 |
 ----- |:--------------: |:---------------------:| :-------------:| :-------------:|
