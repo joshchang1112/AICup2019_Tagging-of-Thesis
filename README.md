@@ -86,7 +86,7 @@ Model |  Max Seq Length | Output Embedding  |  Validation F1 | Public Test F1 |
 ----- |:--------------: |:----------: | :-------------:| :-------------:|
 `Roberta-Base`|   500  | Mean Pooling |  0.7462 | 0.7344   | 
 `Roberta-Large`|   500  | Mean Pooling |  0.7468 | 0.7412   | 
-`XLNet-Large-cased`|   600  | Mean Pooling |  *0.7470* | *0.7413*   | 
+`XLNet-Large-cased`|   600  | Mean Pooling |  **0.7470** | **0.7413**   | 
 
 
 ### Different Learning Rate
@@ -111,9 +111,9 @@ The combination of these methods help me reach my best Validation F1 score : 0.7
 Model |  Max Seq Length | Adv. Text Preprocess  | Validation F1 | Public Test F1 |
 ----- |:--------------: |:---------------------:| :-------------:| :-------------:|
 `Roberta-Large`|   500  | None |  0.7468 | 0.7412   | 
-`Roberta-Large`|   500  | I |  0.7474 | *0.7416*   | 
+`Roberta-Large`|   500  | I |  0.7474 | **0.7416**   | 
 `Roberta-Large`|   500  | I + II |  0.7455 | 0.7397   | 
-`Roberta-Large`|   500  | I + III |  *0.7484* | 0.7397   |
+`Roberta-Large`|   500  | I + III |  **0.7484** | 0.7397   |
 `XLNet-Large-cased`|   600  | None |  0.7470 | 0.7413  |
 `XLNet-Large-cased`|   600  | I |  0.7462 | 0.7414  |
 
